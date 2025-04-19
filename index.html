@@ -1,22 +1,23 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Everything about me">
-    <title>Your Name | Portfolio</title>
+    <meta name="description" content="Prince Roshan's Portfolio - Software Developer and Open Source Contributor">
+    <title>Prince Roshan | Portfolio</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-
     <!-- Navbar Section -->
     <header>
         <nav>
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
+                <li><a href="#achievements">Achievements</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -24,30 +25,131 @@
 
     <!-- Home Section -->
     <section id="home">
-        <h1>Hello, I'm Agent 0013</h1>
-        <p>I'm a software developer passionate about you want to talk about.</p>
-        <a href="#projects" class="btn">View My Projects</a>
+        <h1>Hello, I'm Prince Roshan 👋</h1>
+        <p>Software Developer | Open Source Contributor | Python , Go & C++ Enthusiast</p>
+        <p>Based in Pune, India</p>
+        <div class="social-links">
+            <a href="https://github.com/Agent-Hellboy" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://pypi.org/user/princekrroshan01/" target="_blank"><i class="fab fa-python"></i></a>
+        </div>
     </section>
 
     <!-- About Me Section -->
     <section id="about">
         <h2>About Me</h2>
-        <p>Brief bio here, highlight your skills and experience.</p>
+        <p>I'm a passionate software developer who enjoys contributing to open source projects and creating useful tools and packages. 
+        I'm particularly interested in Python, Go, and C++ development.</p>
+        <p>I love exploring languages and their ecosystems, and I'm always looking for new ways to improve my skills and knowledge.</p>
+        <p> During free time I explore compilers and langauge internals.</p>
+        <p>I'm love designing systems and building scalable and performant systems.</p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Core Skills</h2>
+        <div class="skills-container">
+            <div class="skill-category">
+                <h3>Languages</h3>
+                <ul>
+                    <li>Python</li>
+                    <li>Go</li>
+                    <li>C++</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3>Contributions</h3>
+                <ul>
+                    <li>Open Source Tools Developer</li>
+                    <li>Library Development</li>
+                </ul>
+            </div>
+        </div>
     </section>
 
     <!-- Projects Section -->
     <section id="projects">
-        <h2>My Projects</h2>
-        <div class="project-card">
-            <p>Check out my projects on GitHub.</p>
-            <a href="https://github.com/Agent-Hellboy" target="_blank">View on GitHub</a>
+        <h2>My Work</h2>
+        
+        <!-- Libraries Section -->
+        <div class="category-section">
+            <h3>Libraries</h3>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>trace-dkey</h3>
+                    <p>Python library to trace path of a particular key inside a nested dict using AST</p>
+                    <a href="https://github.com/Agent-Hellboy/trace-dkey" target="_blank">View on GitHub</a>
+                </div>
+                <div class="project-card">
+                    <h3>cpp-filetype</h3>
+                    <p>Minimal C++ based filetype detection library</p>
+                    <a href="https://github.com/Agent-Hellboy/cpp-filetype" target="_blank">View on GitHub</a>
+                </div>
+                <div class="project-card">
+                    <h3>chanplus</h3>
+                    <p>Enhanced Go channel library with additional functionality</p>
+                    <a href="https://github.com/Agent-Hellboy/chanplus" target="_blank">View on GitHub</a>
+                </div>
+                <div class="project-card">
+                    <h3>codefile</h3>
+                    <p>Go library to detect programming languages used in files</p>
+                    <a href="https://github.com/Agent-Hellboy/codefile" target="_blank">View on GitHub</a>
+                </div>
+                <div class="project-card">
+                    <h3>grpc-request-dedup</h3>
+                    <p>Request deduplication middleware for gRPC services</p>
+                    <a href="https://github.com/Agent-Hellboy/grpc-request-dedup" target="_blank">View on GitHub</a>
+                </div>
+                <div class="project-card">
+                    <h3>escp</h3>
+                    <p>Enhanced SCP implementation in Go</p>
+                    <a href="https://github.com/Agent-Hellboy/escp" target="_blank">View on GitHub</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tools Section -->
+        <div class="category-section">
+            <h3>Tools</h3>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>fmsh</h3>
+                    <p>Lightweight and high-performance file management shell written in Go</p>
+                    <a href="https://github.com/Agent-Hellboy/fmsh" target="_blank">View on GitHub</a>
+                </div>
+                <div class="project-card">
+                    <h3>gunicorn-prometheus-exporter</h3>
+                    <p>Prometheus metrics exporter for Gunicorn web server</p>
+                    <a href="https://github.com/Agent-Hellboy/gunicorn-prometheus-exporter" target="_blank">View on GitHub</a>
+                </div>
+                <div class="project-card">
+                    <h3>flask-starter</h3>
+                    <p>Flask extension for quick web app setup through command line utility</p>
+                    <a href="https://github.com/Agent-Hellboy/flask-starter" target="_blank">View on GitHub</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Projects Section -->
+        <div class="category-section">
+            <h3>Projects</h3>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>iPurity</h3>
+                    <p>NSFW detector for iOS devices using OpenCV and C++17</p>
+                    <a href="https://github.com/Agent-Hellboy/iPurity" target="_blank">View on GitHub</a>
+                </div>
+
+            </div>
         </div>
     </section>
 
     <!-- Contact Section -->
     <section id="contact">
         <h2>Contact Me</h2>
-        <p>Email: princekrroshan01@gmail.com</p>
+        <div class="contact-info">
+            <p><i class="fas fa-envelope"></i> princekrroshan01@gmail.com</p>
+            <p><i class="fas fa-map-marker-alt"></i> Pune, India</p>
+        </div>
     </section>
 
     <script src="js/main.js"></script>
